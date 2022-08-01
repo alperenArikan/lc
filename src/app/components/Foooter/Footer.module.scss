@@ -1,0 +1,115 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  flex-direction: column;
+  padding-bottom: 80px;
+
+  .top__bar {
+    padding: 16px 0;
+    width: 100%;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1440px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 1024px) {
+        flex-direction: column;
+      }
+      .top__bar__inner__wrapper {
+        @media screen and (max-width: 1024px) {
+          margin-top: 32px;
+        }
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .text {
+          font-size: 18px;
+          color: #61666a;
+          font-weight: 500;
+          margin-right: 48px;
+        }
+        .app__banner {
+          margin-right: 8px;
+        }
+        .contact__button {
+          &:not(:last-of-type) {
+            margin-right: 32px;
+          }
+        }
+      }
+    }
+  }
+  .bottom__bar {
+    padding: 48px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1440px;
+      justify-content: space-between;
+      @media screen and (max-width: 1024px) {
+        flex-direction: column;
+      }
+      .header {
+        font-size: 20px;
+        color: #61666a;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      .text {
+        font-size: 20px;
+        color: #61666a;
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+        }
+      }
+      .map__wrapper {
+        display: flex;
+        @media screen and (max-width: 1024px) {
+          flex-direction: column;
+        }
+        .map__inner__wrapper {
+          @media screen and (max-width: 1024px) {
+            margin-bottom: 32px;
+            text-align: center;
+          }
+          &:not(:last-of-type) {
+            margin-right: 40px;
+          }
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .contacts__wrapper {
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+          text-align: center;
+        }
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        .header {
+          margin-bottom: 43px;
+        }
+        & button {
+          &:not(:last-of-type) {
+            margin-bottom: 32px;
+          }
+          .button__icon {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}

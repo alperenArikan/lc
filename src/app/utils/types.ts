@@ -1,0 +1,50 @@
+export type sortType =
+  | "recommended"
+  | "priceAsc"
+  | "priceDesc"
+  | "new"
+  | "discount"
+  | "bestSeller"
+  | "liked";
+
+export interface IData {
+  HasCampaignBanners: boolean;
+  HasCampaignBadges: boolean;
+  ModelId: number;
+  ModelUrl: string;
+  DefaultOptionImageUrl: string;
+  OptionImageUrlList: string[];
+  ProductDescription: string;
+  Brand: string;
+  Discounted: boolean;
+  CurrentPricesAreDiscounted: boolean;
+  Price: string;
+  OldPrice: string;
+  MinOldPrice: null;
+  MinCurrentPrice: null;
+  MaxCurrentPrice: null;
+  CurrencyCode: string;
+  OptionSummaryList: any[];
+  OptionId: number;
+  CampaignBanners: null;
+  CampaignBadges: any;
+  Badges: any;
+  IsOutlet: boolean;
+  AvailableStock: number;
+  IsFavorite: boolean;
+  OzelKodRenkKod: string;
+  ModelViewModel: null;
+  OptionColorCount: number;
+  ReviewCount: number;
+  DiscountRatio: number;
+  AvgScore: number;
+  IsMixAndMatch: boolean;
+  MixAndMatchUrl: string;
+  OptionSpecialUrl: null;
+  SubTitleDescription: string;
+  OptionSpecialProperty: number;
+  ProductGroup: string;
+  Gender: string;
+  Category: string;
+  BrandPropertyDescription: string;
+}

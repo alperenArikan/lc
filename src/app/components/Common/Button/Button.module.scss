@@ -1,0 +1,31 @@
+.button {
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.font-sx {
+    font-size: 14px;
+  }
+  &.font-sm {
+    font-size: 16px;
+  }
+  &.font-md {
+    font-size: 18px;
+  }
+  &.contained {
+    background-color: #0047ba;
+    color: #fff;
+    &:hover {
+      background-color: #0353a4;
+    }
+  }
+  &.outlined {
+    border: 1px solid #0047ba;
+    color: #0047ba;
+    &:hover {
+      background-color: #f6fbff;
+    }
+  }
+}
